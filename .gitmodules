@@ -1,0 +1,3 @@
+[submodule "examples/php-cli"]
+	path = examples/php-cli
+	url = git@github.com:timwhitlock/php-cli.git
