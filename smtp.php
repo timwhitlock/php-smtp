@@ -135,8 +135,11 @@ class SMTP {
      * Get/set hostname for HELO SMTP handshake
      * @return string
      */
-    public function helo(){
-        if( is_null($this->smtpHelo) ){
+    public function helo( $name = null ){
+        if( is_string($name) ){
+            $this->smtpHelo = $name;
+        }
+        else if( is_null($this->smtpHelo) ){
             $this->smtpHelo = $this->guess_hostname();
         }
         return $this->smtpHelo;
