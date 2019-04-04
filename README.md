@@ -1,3 +1,7 @@
+# NO LONGER MAINTAINED
+
+---
+
 # php-smtp
 
 ### Simple SMTP library for PHP scripts
